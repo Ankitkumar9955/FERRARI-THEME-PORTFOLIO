@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Raman | Ferrari F1 Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --ferrari-red: #EF1A2D;
+            --ferrari-yellow: #FFF200;
+            --ferrari-green: #00A551;
+            --bg-light: #f8f9fa;
+        }
+
+        body {
+            background-color:#FFF200;
+            color: #2d3748;
+        }
+
+        .ferrari-red {
+            color: var(--ferrari-red);
+        }
+
+        .ferrari-yellow {
+            color: #d4ac0d;
+        }
+
+        .ferrari-green {
+            color: var(--ferrari-green);
+        }
+
+        .bg-ferrari-red {
+            background-color: var(--ferrari-red);
+        }
+
+        .border-ferrari-red {
+            border-color: var(--ferrari-red);
+        }
+
+        .hover-scale {
+            transition: transform 0.2s;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .text {
+            font-size: small;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #00A551 !important; /* Use !important sparingly */
+            font-weight: 1000;
+        }
+        .text-size{
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #00A551 !important; /* Use !important sparingly */
+            font-weight: 1000;
+        }
+        .stats-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .stats-card:hover {
+            box-shadow: 0 4px 6px rgba(239, 26, 45, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .skill-tag {
+            background: white;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            border-color: var(--ferrari-red);
+            transform: scale(1.05);
+            background: #fff5f5;
+        }
+
+        .nav-shadow {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white nav-shadow z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="Scuderia-Ferrari-logo-300x169.webp" alt="Ferrari Logo" class="h-8 mr-2"> <!-- Logo at the top -->
+                <span class="text-xl ferrari-red font-bold">SCUDERIA FERRARI</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#skills" class="text-gray-700 hover:text-red-500 transition-colors">SKILLS</a>
+                <a href="#profile" class="text-gray-700 hover:text-red-500 transition-colors">PROFILE</a>
+                <a href="https://www.linkedin.com/in/aditya-raman-4aa395200/" class="text-gray-700 hover:text-red-500 transition-colors">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto pt-24 px-4">
+
+        
+        <!-- Header Section -->
+        <div class="mb-12">
+            <div class="flex items-baseline gap-4">
+                <span class="ferrari-red text-8xl font-bold opacity-75">#16</span>
+                <div>
+                    <h1 class="text-6xl font-bold text-gray-800">Aditya Raman</h1>
+                    <br>
+                    <p class="text-size">RA2311031010093</p>
+                </div>
+            </div>
+            
+            <div class="flex gap-4 flex-wrap mt-4">
+                <span class="bg-ferrari-red px-3 py-1 text-sm font-bold text-white rounded">AI Engineer</span>
+                <span class="border border-ferrari-red px-3 py-1 text-sm rounded text-gray-700">P1 • POLE</span>
+                <span class="ferrari-red font-bold">-0.543s</span>
+            </div>
+        </div>
+            <img src="profile.jpg" alt="Driver Photo" class="mx-auto rounded-lg shadow-md" style="width: 200px;">
+            <!-- Social Media Icons -->
+            <div class="mt-4 flex space-x-4 justify-center">
+                <a href="https://github.com/Aadi5936" target="_blank" class="social-icon">
+                    <i class="fab fa-github text-3xl text-gray-800 hover:text-ferrari-red"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aditya-raman-4aa395200/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin text-3xl text-gray-800 hover:text-ferrari-red"></i>
+                </a>
+                <a href="https://x.com/me_aditya5936" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter text-3xl text-gray-800 hover:text-ferrari-red"></i>
+                </a>
+            </div>
+            <br>
+
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="stats-card p-6 rounded-lg">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-code text-2xl ferrari-red"></i>
+                    <div>
+                        <div class="text-3xl font-bold ferrari-red">10</div>
+                        <div class="text-sm text-gray-600">Projects</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-card p-6 rounded-lg">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-chart-line text-2xl ferrari-red"></i>
+                    <div>
+                        <div class="text-3xl font-bold ferrari-red">89%</div>
+                        <div class="text-sm text-gray-600">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-card p-6 rounded-lg">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-star text-2xl ferrari-red"></i>
+                    <div>
+                        <div class="text-3xl font-bold ferrari-red">4.8</div>
+                        <div class="text-sm text-gray-600">Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Specs -->
+        <section id="skills" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">TECHNICAL SPECIFICATIONS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="stats-card p-6 rounded-lg">
+                    <h3 class="text-xl mb-4 ferrari-red">ENGINE</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">Python</span>
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">C Programming</span>
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">Java</span>
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">DBMS</span>
+                    </div>
+                    </div>
+                </div>
+                <br>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="stats-card p-6 rounded-lg">
+                    <h3 class="text-xl mb-4 ferrari-red">AERODYNAMICS</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">MySQL</span>
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">Java Script</span>
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">HTML/CSS</span>
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">React</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+         <section>
+                <!-- Languages -->
+                <div class="stats-card p-6 rounded-lg">
+                    <h3 class="text-xl mb-4 ferrari-red">
+                        <i class="fas fa-language mr-2"></i>
+                        LANGUAGES
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">ENGLISH</span>
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">HINDI</span>
+                        <span class="skill-tag px-3 py-2 rounded text-sm text-gray-700">GERMAN</span>
+                    </div>
+                </div>
+<br>
+<br>
+                <!-- Achievements -->
+                <div class="stats-card p-6 rounded-lg">
+                    <h3 class="text-xl mb-4 ferrari-red">
+                        <i class="fas fa-trophy mr-2"></i>
+                        ACHIEVEMENTS
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text">LeetCode</span>
+                            <span class="ferrari-red">Active Coder</span>
+                        </div>
+                    
+                        <div class="flex justify-between items-center">
+                            <span class="text">HackerRank</span>
+                            <span class="ferrari-red">⭐ Gold Medal</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text">CodeChef</span>
+                            <span class="ferrari-red">Programmer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section id="history" class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 ferrari-red inline-block">RACING HISTORY</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="f1-card overflow-hidden">
+                    <a href="https://leetcode.com/u/AdityaRaman_5936/" target="_blank">
+                        <img src="leetcode.webp" alt="LeetCode" class="w-fit h-48 object-cover"/>
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">LeetCode</h3>
+                    </div>
+                </div>
+                
+                <div class="f1-card overflow-hidden">
+                    <a href="https://www.hackerrank.com/profile/ar6105" target="_blank">
+                        <img src="HackerRank.png" alt="HackerRank" class="w-fit h-48 object-cover"/>
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">HackerRank</h3>
+                        <p class="text">5⭐ Gold Medal</p>
+                    </div>
+                </div>
+                
+                <div class="f1-card overflow-hidden">
+                    <a href="https://blog.codechef.com/author/aadi_5936/" target="_blank">
+                        <img src="Codechef.png" alt="CodeChef" class="w-fit h-48 object-cover"/>
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">CodeChef</h3>
+                        <p class="text">4⭐ Programmer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Optional Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <img src="Scuderia-Ferrari-logo-300x169.webp" alt="Ferrari Logo" class="h-10 mx-auto mb-2"> <!-- Logo in the footer -->
+            <small class="text-gray-600">© 2024 Aditya Raman. All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+</html>
